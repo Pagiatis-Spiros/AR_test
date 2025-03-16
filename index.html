@@ -1,4 +1,3 @@
-
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,8 +7,21 @@
   <body>
     <a-scene mindar-image="imageTargetSrc: ./targets.mind;" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+      <a-assets>
+        <img
+          id="logo"
+          src="./card.png"
+        />
+      </a-assets> 
       <a-entity mindar-image-target="targetIndex: 0">
-        <a-plane color="blue" opaciy="0.5" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
+        <a-image
+          width="10.24"
+          height="4.46"
+          scale="0.1 0.1 0.1"
+          position="0 0.5 0"
+          src="#logo"
+        >
+        </a-image> 
       </a-entity>
     </a-scene>
   </body>
