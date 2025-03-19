@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+  </head>
+  <body>
+    <a-scene mindar-image="imageTargetSrc: ./targets.mind;" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+      <a-assets>
+        <img id="img0" src="./0_astypalaia.jpg" />
+        <img id="img1" src="./1_prosfora.jpg" />
+        <img id="img2" src="./2_minima.jpg" />
+        <img id="img3" src="./3_akatikito.jpg" />
+        <img id="img4" src="./4_thalasoplilia.jpg" />
+        <img id="img5" src="./5_aggelos.jpg" />
+      </a-assets> 
+      
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-image
+          width="5%"
+          height="10%"
+          scale="0.1 0.1 0.1"
+          position="0 0.5 0"
+          src="#img0"
+        >
+        </a-image> 
+      </a-entity>
+      
+      <a-entity mindar-image-target="targetIndex: 1">
+        <a-image
+          width="5%"
+          height="10%"
+          scale="0.1 0.1 0.1"
+          position="0 0.5 0"
+          src="#img1"
+        >
+        </a-image> 
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 2">
+        <a-image
+          width="5%"
+          height="10%"
+          scale="0.1 0.1 0.1"
+          position="0 0.5 0"
+          src="#img2"
+        >
+        </a-image> 
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 3">
+        <a-image
+          width="7%"
+          height="7%"
+          scale="0.1 0.1 0.1"
+          position="0 0.5 0"
+          src="#img3"
+        >
+        </a-image> 
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 4">
+        <a-image
+          width="5%"
+          height="10%"
+          scale="0.1 0.1 0.1"
+          position="0 0.5 0"
+          src="#img4"
+        >
+        </a-image> 
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 5">
+        <a-image
+          width="10%"
+          height="20%"
+          scale="0.1 0.1 0.1"
+          position="0 0.5 0"
+          src="#img5"
+        >
+        </a-image> 
+      </a-entity>
+      
+    </a-scene>
+  </body>
+</html>
